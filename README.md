@@ -18,30 +18,46 @@ A package is considered heavy if:
 - SPECIAL: Either bulky or heavy (but not both)
 - REJECTED: Both bulky and heavy
 
+## Requirements
+
+- Python 3.6+
+
 ## Usage
 
-### Running the main program
+### Run the program
 
+**Linux/Mac:**
 ```bash
 python3 main.py
 ```
 
-### Running tests
+**Windows:**
+```bash
+python main.py
+```
 
+### Run tests
+
+**Linux/Mac:**
 ```bash
 make test
 ```
 
-### Running tests with verbose output
+**Windows:**
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
 
+### Run tests with verbose output
+
+**Linux/Mac:**
 ```bash
 make test-verbose
 ```
 
-### Cleaning up cache files
-
+**Windows:**
 ```bash
-make clean
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 ## Function API
